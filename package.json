@@ -1,0 +1,28 @@
+{
+  "name": "gba-dev",
+  "displayName": "GBA Dev Helper",
+  "description": "VS Code extension for quickly creating GBA projects and building/running them with devkitARM + mGBA.",
+  "version": "0.0.1",
+  "publisher": "",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:gba-dev.createProject"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gba-dev.createProject",
+        "title": "GBA: Create New Project"
+      }
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.1"
+  }
+}
